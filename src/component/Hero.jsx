@@ -18,34 +18,37 @@ const Hero = () => {
           Hola Visionary! Ready to Scale
           <span className="text-[#C68C33]"> New Heights?</span>
         </h3>
-        <motion.h1
-          animate={{
-            backgroundImage: [
-              "linear-gradient(90deg, #ff0055, #22cc88)",
-              "linear-gradient(90deg, #22cc88, #ff0055)",
-            ],
-          }}
-          transition={{
-            repeat: Infinity,
-            repeatType: "reverse",
-            duration: 3,
-            ease: "easeInOut",
-          }}
-          style={{
-            backgroundSize: "200% 200%", // Enlarge background to support gradient transitions
-            WebkitBackgroundClip: "text", // Clip background to text
-            display: "inline-block", // Ensure the gradient applies to text only
-          }}
-          className="heading text-4xl lg:text-5xl font-bold text-center"
-        >
-          Fueling Innovation <br />
-          Powering Your Success
-        </motion.h1>
 
-        <h2 className="pt-6 text-sm font-medium text-center max-w-[400px] text-[#A7A3AC]">
+        <div className="text-center">
+          <motion.h1
+            animate={{
+              backgroundImage: [
+                "linear-gradient(90deg, #ff0055, #22cc88)",
+                "linear-gradient(90deg, #22cc88, #ff0055)",
+              ],
+            }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "reverse",
+              duration: 3,
+              ease: "easeInOut",
+            }}
+            style={{
+              backgroundSize: "200% 200%", // Enlarge background to support gradient transitions
+              WebkitBackgroundClip: "text", // Clip background to text
+              display: "inline-block", // Ensure the gradient applies to text only
+            }}
+            className="heading text-4xl lg:text-5xl font-bold"
+          >
+            Fueling Innovation <br />
+            Powering Your Success
+          </motion.h1>
+        </div>
+        <h3 className="max-w-[450px] pt-2 lg:pl-8 text-sm font-medium text-[#A7A3AC] text-center mx-auto">
           From IT Excellence to Creative Brilliance – We’re Your Complete
           Solution to Drive Business Growth.
-        </h2>
+        </h3>
+
         <div className="flex justify-center pt-6">
           <button className="btn-grad px-4 py-2 rounded-2xl text-lg font-medium z-20">
             View in Instagram
