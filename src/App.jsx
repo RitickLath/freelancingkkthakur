@@ -1,17 +1,18 @@
-import React from "react";
 import Hero from "./component/Hero";
+import ParticlesComponent from "./component/SubComponent/ParticlesComponent";
 import Why from "./component/Why";
 
+// App.jsx
 const App = () => {
   return (
-    <div
-      style={{
-        background:
-          "radial-gradient(circle at 0% 0%, #57458D, #3e2f64 15%, #0F051D 35%, #140822 100%)",
-      }}
-      className="px-6 sm:px-10 md:px-12 lg:px-16 py-4 w-full min-h-screen text-white"
-    >
+    <div className="px-6 sm:px-10 md:px-12 lg:px-16 py-4 w-full min-h-screen text-white">
+      <div className="absolute h-screen overflow-hidden">
+        <ParticlesComponent />
+      </div>
       <Hero />
+      <Why />
+      <Why />
+      <Why />
       <Why />
     </div>
   );

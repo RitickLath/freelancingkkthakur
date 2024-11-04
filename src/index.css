@@ -2,7 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-#particles canvas {
-  width: 100%;
-  height: 10%;
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #c29e67 0%,
+    #514083 50%,
+    #281f34 100%
+  );
+}
+.btn-grad {
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
 }

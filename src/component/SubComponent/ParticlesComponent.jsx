@@ -1,9 +1,9 @@
+// ParticlesComponent.jsx
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
-
 import { loadSlim } from "@tsparticles/slim";
 
-const ParticlesComponent = (props) => {
+const ParticlesComponent = () => {
   const [init, setInit] = useState(false);
 
   useEffect(() => {
@@ -20,11 +20,8 @@ const ParticlesComponent = (props) => {
 
   const options = useMemo(
     () => ({
-      background: {
-        color: {
-          //   value: "#1E2F97",
-        },
-      },
+      smooth: true,
+
       fpsLimit: 120,
       interactivity: {
         events: {
@@ -89,7 +86,7 @@ const ParticlesComponent = (props) => {
     []
   );
 
-  return <Particles id={props.id} init={particlesLoaded} options={options} />;
+  return <Particles id="particles" init={particlesLoaded} options={options} />;
 };
 
 export default ParticlesComponent;
