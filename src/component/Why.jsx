@@ -5,7 +5,9 @@ import { whyChooseUs } from "../constants/WhyChoose";
 const Why = () => {
   return (
     <div className="z-10 flex flex-col items-center w-full mt-8">
-      <h1 className="text-4xl font-bold pb-8 text-center">Why Company Name?</h1>
+      <h1 className="text-4xl font-bold pb-8 text-center">
+        Why One Stop Solution?
+      </h1>
       <div className="grid md:grid-cols-2 gap-10">
         {whyChooseUs.map((item, index) => (
           <WhyCard
