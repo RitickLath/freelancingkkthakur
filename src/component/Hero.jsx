@@ -6,6 +6,9 @@ import ParticlesComponent from "./SubComponent/ParticleComponent";
 const Hero = () => {
   return (
     <div className="flex flex-col items-center pt-12 h-screen">
+      <ParticlesComponent />
+      <Blob />
+      <Stone />
       <h1 className="text-5xl font-bold max-w-[500px]">
         Fueling Innovation <br />
         Powering Your Success
