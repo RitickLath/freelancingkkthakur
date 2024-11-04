@@ -11,9 +11,6 @@ const App = () => {
       </div>
       <Hero />
       <Why />
-      <Why />
-      <Why />
-      <Why />
     </div>
   );
 };

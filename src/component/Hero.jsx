@@ -1,16 +1,15 @@
 import React from "react";
-import Blob from "./Marbles/Blob";
-import Stone from "./Marbles/Stone";
 import ParticlesComponent from "./SubComponent/ParticlesComponent";
 import { motion } from "framer-motion";
-import Border1 from "./svgs/border1";
+import Marble1 from "./Marbles/Marble1";
+import Marble2 from "./Marbles/Marble2";
 
 const Hero = () => {
   return (
     <div className="z-10 flex flex-col items-center pt-12 h-screen">
-      <Blob />
-      <Stone />
       <ParticlesComponent />
+      <Marble1 />
+      <Marble2 />
       <motion.div
         transition={{ duration: 1, ease: "backInOut" }}
         animate={{ scale: [0, 0.5, 1] }}
