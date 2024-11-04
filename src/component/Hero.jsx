@@ -13,7 +13,7 @@ const Hero = () => {
         Fueling Innovation <br />
         Powering Your Success
       </h1>
-      <h2 className="pt-4 text-center max-w-[400px] text-[#A7A3AC]">
+      <h2 className="pt-4 text-lg font-medium text-center max-w-[400px] text-[#A7A3AC]">
         From IT Excellence to Creative Brilliance – We’re Your Complete Solution
         to Drive Business Growth.
       </h2>
