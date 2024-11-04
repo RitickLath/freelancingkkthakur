@@ -9,7 +9,7 @@ const Hero = () => {
       <ParticlesComponent />
       <Blob />
       <Stone />
-      <h1 className="text-5xl font-bold text-center max-w-[500px]">
+      <h1 className="text-4xl font-bold text-center">
         Fueling Innovation <br />
         Powering Your Success
       </h1>
