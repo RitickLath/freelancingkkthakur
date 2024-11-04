@@ -6,7 +6,7 @@ import Marble2 from "./Marbles/Marble2";
 
 const Hero = () => {
   return (
-    <div className="z-10 flex flex-col items-center pt-12 h-screen">
+    <div className="z-10 flex flex-col items-center pt-12 min-h-screen">
       <ParticlesComponent />
       <Marble1 />
       <Marble2 />
