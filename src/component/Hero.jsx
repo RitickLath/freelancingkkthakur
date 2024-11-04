@@ -14,7 +14,7 @@ const Hero = () => {
         transition={{ duration: 1, ease: "backInOut" }}
         animate={{ scale: [0, 0.5, 1] }}
       >
-        <h3 className="text-base text-center text-[#A7A3AC] font-medium">
+        <h3 className="text-base text-center pb-2 text-[#A7A3AC] font-medium">
           Hola Visionary! Ready to Scale
           <span className="text-[#C68C33]"> New Heights?</span>
         </h3>
