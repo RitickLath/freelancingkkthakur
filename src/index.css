@@ -23,3 +23,9 @@
   color: #fff;
   text-decoration: none;
 }
+
+.heading {
+  background: linear-gradient(to left, #c29e67 17%, #514083 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

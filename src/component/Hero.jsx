@@ -14,14 +14,34 @@ const Hero = () => {
         transition={{ duration: 1, ease: "backInOut" }}
         animate={{ scale: [0, 0.5, 1] }}
       >
-        <h3 className="text-base text-center pb-2 text-[#A7A3AC] font-medium">
+        <h3 className="text-base text-center pb-2 md:pb-0 text-[#A7A3AC] font-medium">
           Hola Visionary! Ready to Scale
           <span className="text-[#C68C33]"> New Heights?</span>
         </h3>
-        <h1 className="text-4xl lg:text-5xl font-bold text-center">
+        <motion.h1
+          animate={{
+            backgroundImage: [
+              "linear-gradient(90deg, #ff0055, #22cc88)",
+              "linear-gradient(90deg, #22cc88, #ff0055)",
+            ],
+          }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "reverse",
+            duration: 3,
+            ease: "easeInOut",
+          }}
+          style={{
+            backgroundSize: "200% 200%", // Enlarge background to support gradient transitions
+            WebkitBackgroundClip: "text", // Clip background to text
+            display: "inline-block", // Ensure the gradient applies to text only
+          }}
+          className="heading text-4xl lg:text-5xl font-bold text-center"
+        >
           Fueling Innovation <br />
           Powering Your Success
-        </h1>
+        </motion.h1>
+
         <h2 className="pt-6 text-sm font-medium text-center max-w-[400px] text-[#A7A3AC]">
           From IT Excellence to Creative Brilliance – We’re Your Complete
           Solution to Drive Business Growth.
