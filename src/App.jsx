@@ -9,7 +9,7 @@ const App = () => {
         background:
           "radial-gradient(circle at 0% 0%, #57458D, #3e2f64 15%, #0F051D 35%, #140822 100%)",
       }}
-      className="px-3 sm:px-5 md:px-6 lg:px-12 py-4 w-full min-h-screen text-white"
+      className="px-6 sm:px-10 md:px-12 lg:px-16 py-4 w-full min-h-screen text-white"
     >
       <Hero />
       <Why />
