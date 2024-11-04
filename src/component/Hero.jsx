@@ -6,13 +6,13 @@ import Marble2 from "./Marbles/Marble2";
 
 const Hero = () => {
   return (
-    <div className="z-10 flex flex-col items-center pt-12 min-h-screen">
+    <div className="z-10 flex flex-col items-center pt-8 lg:pt-12 min-h-screen">
       <ParticlesComponent />
       <Marble1 />
       <Marble2 />
-      <motion.div
-        transition={{ duration: 1, ease: "backInOut" }}
-        animate={{ scale: [0, 0.5, 1] }}
+      <div
+      // transition={{ duration: 1, ease: "backInOut" }}
+      // animate={{ scale: [0, 0.5, 1] }}
       >
         <h3 className="text-base text-center pb-2 md:pb-0 text-[#A7A3AC] font-medium">
           Hola Visionary! Ready to Scale
@@ -54,7 +54,7 @@ const Hero = () => {
             View in Instagram
           </button>
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

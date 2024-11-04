@@ -1,3 +1,4 @@
+import Header from "./component/Header";
 import Hero from "./component/Hero";
 import ParticlesComponent from "./component/SubComponent/ParticlesComponent";
 import Why from "./component/Why";
@@ -9,6 +10,7 @@ const App = () => {
       <div className="absolute h-screen overflow-hidden">
         <ParticlesComponent />
       </div>
+      <Header />
       <Hero />
       <Why />
     </div>
